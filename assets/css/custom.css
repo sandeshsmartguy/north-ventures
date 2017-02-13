@@ -1,0 +1,18 @@
+.lede__headline, .lede__headline--caps, .lede__headline--white, 
+.lede__headline-b {
+    font-size: 2em;
+    color: #59656B;
+    font-weight: 600;
+    text-align: center;
+    font-weight: 300;
+}
+.lede__border {
+    width: 15%;
+    border: 1px solid #00436f;
+}
+.lede__subheadline, .lede__subheadline--white, .lede__subheadline-b {
+    font-size: 18px;
+    color: #474A4C;
+    font-weight: 300;
+    text-align: center;
+}

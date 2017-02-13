@@ -1,0 +1,279 @@
+<style type="text/css">
+.process-tab {
+          background: rgba(191, 220, 232, 0.32);
+          padding-top: 40px;
+}
+.wizard {
+    margin: 20px auto;
+
+    color: #7e8488;
+}
+
+
+    .wizard .nav-tabs {
+        position: relative;
+        margin: 40px auto;
+        margin-bottom: 0;
+        border-bottom-color: #e0e0e0;
+    }
+
+    .wizard > div.wizard-inner {
+        position: relative;
+    }
+
+.connecting-line {
+    height: 2px;
+    background: #e0e0e0;
+    position: absolute;
+    width: 80%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    z-index: 0;
+}
+
+.wizard .nav-tabs > li.active > a, .wizard .nav-tabs > li.active > a:hover, .wizard .nav-tabs > li.active > a:focus {
+    color: #555555;
+    cursor: default;
+    border: 0;
+    border-bottom-color: transparent;
+}
+
+span.round-tab {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    display: inline-block;
+    border-radius: 100px;
+    background: #fff;
+    border: 2px solid #e0e0e0;
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    font-size: 25px;
+}
+span.round-tab i{
+    color:#00436f;
+}
+.wizard li.active span.round-tab {
+    background: #fff;
+    border: 2px solid #b31943;
+    
+}
+.wizard li.active span.round-tab i{
+    color: #b31943;
+}
+
+span.round-tab:hover {
+    color: #333;
+    border: 2px solid #333;
+}
+
+.wizard .nav-tabs > li {
+    width: 20%;
+}
+
+.wizard li:after {
+    content: " ";
+    position: absolute;
+    left: 46%;
+    opacity: 0;
+    margin: 0 auto;
+    bottom: 0px;
+    border: 5px solid transparent;
+    border-bottom-color: #b31943;
+    transition: 0.1s ease-in-out;
+}
+
+.wizard li.active:after {
+    content: " ";
+    position: absolute;
+    left: 46%;
+    opacity: 1;
+    margin: 0 auto;
+    bottom: 0px;
+    border: 10px solid transparent;
+    border-bottom-color: #b31943;
+}
+
+.wizard .nav-tabs > li a {
+    width: 70px;
+    height: 70px;
+    margin: 20px auto;
+    border-radius: 100%;
+    padding: 0;
+}
+
+    .wizard .nav-tabs > li a:hover {
+        background: transparent;
+    }
+.wizard .tab-content {
+  margin-left: 80px;
+}
+.wizard .tab-pane {
+    position: relative;
+    padding-top: 50px;
+}
+
+.wizard h3 {
+    margin-top: 0;
+}
+.process-head {
+  color: #b31943;
+}
+.process__list {
+    list-style: circle;
+    padding-left: 0;
+}
+.process__listitem {
+    font-size: 16px;
+    line-height: 1.1em;
+    margin-left: 25px;
+    padding: 5px 0;
+}
+
+@media( max-width : 585px ) {
+
+    .wizard {
+        width: 90%;
+        height: auto !important;
+    }
+
+    span.round-tab {
+        font-size: 16px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .wizard .nav-tabs > li a {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+.wizard .tab-content {
+  margin-left: 10px;
+}
+    .wizard li.active:after {
+        content: " ";
+        position: absolute;
+        left: 35%;
+    }
+}
+</style>
+<section class="container-fluid process-tab">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="lede__headline">Our Investment Process</h3>
+          <hr class="lede__border"><p class="lede__subheadline">Our Investment Approach is a thorough process of evaluation, review and exit
+          </p>
+        </div>
+      </div>
+    </div>
+<div class="container">
+  <div class="row">
+    <section>
+        <div class="wizard">
+            <div class="wizard-inner">
+                <div class="connecting-line"></div>
+                <ul class="nav nav-tabs" role="tablist">
+
+                    <li role="presentation" class="active">
+                        <a href="#step1" data-toggle="tab" aria-controls="step1" title="Step 1">
+                            <span class="round-tab">
+                                <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li role="presentation" >
+                        <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2">
+                            <span class="round-tab">
+                                <i class="fa fa-tasks" aria-hidden="true"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Step 3">
+                            <span class="round-tab">
+                                <i class="fa fa-area-chart" aria-hidden="true"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#step4" data-toggle="tab" aria-controls="step3" role="tab" title="Step 4">
+                            <span class="round-tab">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li role="presentation">
+                        <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Complete">
+                            <span class="round-tab">
+                                <i class="fa fa-sign-out" aria-hidden="true"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <form role="form">
+                <div class="tab-content">
+                    <div class="tab-pane active" role="tabpanel" id="step1">
+                        <h3 class="process-head">Origination</h3>
+                        <p>Team expertise: Deep sectorial expertise to proactively identify, prioritise, track and pursue attractive investment options</p>
+                        <ul class="process__list">
+                          <li class="process__listitem">IIMs, IITs, Make in India and other start-up events</li>
+                          <li class="process__listitem">Management’s extensive alumni and professional network </li>
+                          <li class="process__listitem">Collaboration with incubators</li>
+                          <li class="process__listitem">Collaboration with Invest India and similar organisations</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="step2">
+                        <h3 class="process-head">Due Diligence</h3>
+                        <p>Thorough evaluation by in-house or a partner team of subject-matter experts:</p>
+                        <ul class="process__list">
+                          <li class="process__listitem">Financial</li>
+                          <li class="process__listitem">Business</li>
+                          <li class="process__listitem">Legal</li>
+                          <li class="process__listitem">Technical</li>
+                          <li class="process__listitem">Promoter (Background and Forensic)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="step3">
+                        <h3 class="process-head">Analysis</h3>
+                        <p>Evaluation of deal attractiveness and identification of potential risks/concerns, as well as timely monitoring to ensure planned economic returns </p>
+                        <ul class="process__list">
+                          <li class="process__listitem">Critical monitoring points</li>
+                          <li class="process__listitem">Industry experts on advisory board</li>
+                          <li class="process__listitem">Expected return and margin of safety based on negotiations</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="step4">
+                        <h3 class="process-head">Review</h3>
+                        <p>Timely review of strategy based on: </p>
+                        <ul class="process__list">
+                          <li class="process__listitem">Company indicators</li>
+                          <li class="process__listitem">Market indicators</li>
+                          <li class="process__listitem">Discussion with investment advisory board</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="complete">
+                        <h3 class="process-head">Exit</h3>
+                          <p>Experienced management team to formulate favourable exit strategies, helping generate maximum IRR</p>
+                          <p>Network of investors, including financial (PE and secondary buy-out players) and strategic buyers (corporates)</p>
+                          <p>In-house team of transaction advisory experts providing assistance for successful exits</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </form>
+        </div>
+    </section>
+   </div>
+</div>
+
+</section>
