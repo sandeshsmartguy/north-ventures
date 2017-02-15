@@ -1,8 +1,12 @@
-.lede__headline, .lede__headline--caps, .lede__headline--white, 
-.lede__headline-b {
+.lede__headline, .lede__headline--caps, .lede__headline-b {
     font-size: 2em;
     color: #59656B;
-    font-weight: 600;
+    text-align: center;
+    font-weight: 300;
+}
+.lede__headline--white {
+    font-size: 2em;
+    color: #ffffff;
     text-align: center;
     font-weight: 300;
 }
@@ -13,6 +17,12 @@
 .lede__subheadline, .lede__subheadline--white, .lede__subheadline-b {
     font-size: 18px;
     color: #474A4C;
+    font-weight: 300;
+    text-align: center;
+}
+.lede__subheadline--white {
+    font-size: 18px;
+    color: #ffffff;
     font-weight: 300;
     text-align: center;
 }

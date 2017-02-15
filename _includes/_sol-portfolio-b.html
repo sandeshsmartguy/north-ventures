@@ -1,0 +1,481 @@
+<!-- 4 tab layout -->
+<style type="text/css">
+
+.sol-port-b {
+  background: url(/assets/images/backgrounds/sol-port-bkg.jpg);
+  padding: 60px 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.lede__headline--white {
+    font-size: 2em;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 300;
+}
+
+.lede__subheadline--white {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 300;
+    text-align: center;
+}
+.sol-port-b-tabs {
+  text-align:center;
+  display: table;
+  width: 100%;      /* new */
+  margin-top: 3.0em;
+}
+
+.sol-port-b-tabs.nav-tabs {
+  border-bottom: none;
+}
+
+.sol-port-b-tabs.nav-tabs > li {
+  float:none;
+  margin-bottom: 1.5em;
+  display: table-cell;  /* updated */
+  margin-left:50px;
+}
+
+.sol-port-b-tabs__content {
+  background: white;
+  padding: 2em;
+  border-radius: 1.5em;
+  margin-top: 2em;
+  box-shadow: -2px 2px 2px #89CAFF;
+}
+
+.sol-port-b-tabs__item > h4 {
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 0.8em;
+  font-weight: 300;
+  font-size:1.4em;
+}
+
+.nav-tabs .sol-port-b-tabs__item > a {
+    display: inline-block;
+    width: 8em;
+    height: 8em;
+    border-radius: 100px;
+     background: white;
+}
+
+.nav-tabs .sol-port-b-tabs__item > a > i {
+    line-height: 2.7em;
+    font-size: 2.3em;
+}
+.nav-tabs .sol-port-b-tabs__item.active > a {
+  box-shadow: -2px 2px 8px #89CAFF;
+}
+
+.nav-tabs > .sol-port-b-tabs__item.active > a:focus {
+  color: blue;
+}
+
+.nav-tabs .sol-port-b-tabs__item.active > a::before {
+  /* triangle properties */
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 25px solid white;
+    content: "";
+    width: 0;
+    height: 0;
+
+     /*  positioning */
+    left: 25%;
+    top: 108%;
+    pointer-events: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.sol-port-b-content__headline--left {
+  color: #2C7DA8;
+  font-size: 1.2em;
+  letter-spacing: 0.02em;
+  padding-left: 0.6em;
+  margin-bottom: 1.2em;
+  padding-bottom: 0.8em;
+  line-height: 1.5em;
+  font-weight: 300;
+  border-bottom: 1px solid #cccccc;
+}
+
+.sol-port-b-content__headline--right {
+  text-transform: uppercase;
+  color: #2C7DA8;
+  font-size: 1.6em;
+  letter-spacing: 0.02em;
+  padding-left: 0.6em;
+  margin-bottom: 1.2em;
+  font-weight: 300;
+  line-height: 1.5em;
+  padding-bottom: 0.8em;
+  border-bottom: 1px solid #cccccc;
+}
+
+.sol-port-b-content__headline > span {
+  font-size: 0.8em;
+}
+
+.sol-port-b-content__list {
+  margin-bottom: 1em;
+  margin-bottom: 1em;
+
+  border-right: 1px #a7a8a9 dotted;
+  padding-right: 1.2em;
+}
+.sol-port-b-content__list2 {
+  margin-bottom: 1em;
+  margin-bottom: 1em;
+  padding-right: 1.2em;
+}
+
+.sol-port-b-content__item__headline {
+    text-transform: none;
+    font-size: 1.1em;
+    color: #b3223c;
+    letter-spacing: 0.02em;
+}
+
+.sol-port-b-content__item__para {
+  font-size: 0.9em;
+}
+
+.sol-port-b-content__item {
+    color: #2C7DA8;
+    line-height: 1.5em;
+    padding-top: 0.8em;
+    font-size: 16px;
+    font-weight: 300;
+    border-bottom: 1px #cccccc dashed;
+}
+
+.sol-port-b-content__item2 {
+    color: #2C7DA8;
+    line-height: 1.5em;
+    padding-top: 0.8em;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.sol-port-b-content__item span{
+    color: #b3223c;
+}
+
+.sol-port-b-content__item_1 {
+  color: #2C7DA8;
+  line-height: 2.0em;
+  padding-left: 1.4em;
+  font-size: 15px;
+  font-weight: 300;
+
+}
+.sol-port-b-content__item_2 {
+  color:#2C7DA8;
+  line-height: 2.5em;
+  padding-left: 0.8em;
+  font-size: 16px;
+  font-weight: 300;
+
+}
+
+.sol-port-b-content__para {
+  color: #707274;
+  line-height: 1.8em;
+  font-size: 1.2em;
+  padding-left: 0.8em;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.sol-port-b-content__para_2 {
+    color: #707274;
+    line-height: 1.8em;
+    font-size: 1em;
+    padding-left: 0.8em;
+    font-weight: 300;
+}
+
+.sol-port__headline  {
+  background-color: #00436f;
+  color: white;
+  font-size: 16px;
+  padding: 10px 15px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+
+.sol-port-table__list {
+  list-style: square;
+  padding-left: 0;
+  margin-bottom: 50px;
+}
+
+.sol-port-table__list2 {
+  list-style: square;
+}
+
+.sol-port-table__listitem {
+  font-size: 16px;
+  color: #6A6C66;
+  line-height: 1.5em;
+/*  list-style: decimal;*/
+  margin-left: 9%;
+  padding: 10px 0;
+/* border-bottom: 1px dotted #e3e3e3; */
+}
+.sol-port-table__listitem span {
+  color:#b3223c;
+}
+.tab-pane .col-sm-2 {
+ width: 19.9%;
+ margin-bottom: -40px;
+}
+.tab-pane-headline {
+  color:#b3223c;
+  text-align: center;
+  font-size: 1.2em;
+  background-color: rgba(158, 158, 158, 0.2);
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.tab-pane .sol-icon {
+  font-size: 30px;
+  width: 50px;
+  background-color: #2c70b3;
+  margin-left: 40%;
+  color: #ffffff;
+  border-radius: 12px;
+
+}
+@media only screen and (max-width : 480px) {
+  .nav-tabs .sol-port-b-tabs__item > a {
+    width: 5em;
+    height: 5em;
+  }
+
+  .nav-tabs .sol-port-b-tabs__item > a > img {
+        position: relative;
+    bottom: 11px;
+    left: -2px;
+  }
+
+  .sol-port-b-tabs__item > h4 {
+    font-size: 0.9em;
+  }
+}
+
+</style>
+
+<script type="text/javascript">
+
+{% set solPortJs %}
+$(document).ready(function(){
+  $('.sol-port-b-tabs__item a').hover(function() {
+    $(this).tab('show');
+  });
+});
+</script>
+
+<section class="container-fluid sol-port-b">
+    <div class="row">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-sm-12">
+            <h3 class="lede__headline--white">About Aranca</h3>
+            <p class="lede__subheadline--white">Know how Aranca, a 35North affiliate company, help us provide a unique set of offerings to the investors and partners</p>
+            <hr class="lede__border--white">
+            
+            <ul class="nav nav-tabs sol-port-b-tabs" role="tablist">
+              <li class="active sol-port-b-tabs__item">
+                <h4>Company Profile</h4>
+                <a href="#tax" role="tab" data-toggle="tab" data-target="#tax"><br>
+                  <img src="https://www.aranca.com/assets/uploads/icons/overview/transaction-services.png" alt="cap-block-icon2" height="40px" width="40px">
+                </a>
+              </li>
+              <li class="sol-port-b-tabs__item">
+                <h4>Capabilities</h4>
+                <a href="#finance" role="tab" data-toggle="tab" data-target="#finance"><br>
+                  <img src="https://www.aranca.com/assets/uploads/icons/overview/credibility.png" alt="cap-block-icon2" height="40px" width="40px">
+                </a>
+              </li>
+              <li class="sol-port-b-tabs__item" data-target="">
+                <h4>Aranca Support</h4>
+                <a href="#transact" role="tab" data-toggle="tab" data-target="#transact"><br>
+                    <img src="https://www.aranca.com/assets/uploads/icons/overview/expert-team.png" alt="cap-block-icon2" height="40px" width="40px">
+                </a>
+              </li>
+            </ul>
+            
+            <div class="tab-content sol-port-b-tabs__content">
+              
+              <div class="tab-pane fade active in" id="tax">
+                <div class="row">
+                  <div class="col-sm-8">
+                      <ul class="sol-port-b-content__list">
+                          <li class="sol-port-b-content__item__headline"></li>
+                          <li class="sol-port-b-content__item">Founded in  2003</li>
+                          <li class="sol-port-b-content__item">Global presence with offices in India, China, US, Europe and Middle East</li>
+                          <li class="sol-port-b-content__item">Global Network of <span>2000+</span> investors, partners and clients</li>
+                          <li class="sol-port-b-content__item">ISO 27001:2013 certified</li>
+                          <li class="sol-port-b-content__item__headline"></li>
+                          <li class="sol-port-b-content__item"><span>600+</span> strong team comprising of CAs, MBAs, Engineers, MBBS, CFAs, IP Specialists and ASAs</li> 
+                          <li class="sol-port-b-content__item">Posses strong expertise across geographies, industry sectors and  technology domains</li>
+                          <li class="sol-port-b-content__item__headline"></li>
+                          <li class="sol-port-b-content__item"><span>1,000+</span> Silicon Valley start-ups</li>
+                          <li class="sol-port-b-content__item"><span>5,000+</span> advisory assignments</li>
+                          <li class="sol-port-b-content__item"><span>400+</span> strong industry sector-focused analyst teams</li>
+                          <li class="sol-port-b-content__item">Advisory engagements across <span>120+</span> sectors covering <span>80+</span> countries</li>
+                          <li class="sol-port-b-content__item"><span>250+</span> technology domains</li>
+                      </ul>
+                  </div>
+                  <div class="col-sm-4">
+                      <ul class="sol-port-b-content__list2">
+                          <li class="sol-port-b-content__item__headline">Complementary business lines:</li>
+                          <li class="sol-port-b-content__item2"><img src="https://www.aranca.com/assets/images/icons/ia-logo.jpg" width="35px" alt="Transaction Advisory Services - Aranca" />&nbsp; &nbsp;Transaction Advisory</li>
+                          <li class="sol-port-b-content__item2"><img src="https://www.aranca.com/assets/images/icons/br-logo.jpg" width="35px" alt="Business Research & Advisory - Aranca" />&nbsp; &nbsp;Business Research & Advisory </li>
+                          <li class="sol-port-b-content__item2"><img src="https://www.aranca.com/assets/images/icons/ip-logo.jpg" width="35px" alt="Technology Intelligence and IP Research - Aranca" />&nbsp; &nbsp;Technology Intelligence and IP Research</li>
+                          <li class="sol-port-b-content__item2"><img src="https://www.aranca.com/assets/images/icons/pr-logo.jpg" width="35px" alt="Procurement & Supply Chain Intelligence - Aranca" />&nbsp; &nbsp;Procurement & Supply Chain Intelligence</li>
+                          <li class="sol-port-b-content__item2"><img src="https://www.aranca.com/assets/images/icons/ir-logo.jpg" width="35px" alt="Investment Research & Analytics - Aranca" />&nbsp; &nbsp;Investment Research & Analytics</li>
+                      </ul>
+                  </div>
+                </div>
+              </div> 
+              
+              <div class="tab-pane fade" id="finance">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <p class="tab-pane-headline">OUR CAPABILITIES AND EXPERIENCE</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-2">
+                    <div class="sol-port__headline" style="padding: 10px 2px;">Market Research Capabilities </div>
+                    <ul class="sol-port-table__list">
+                      <li class="sol-port-table__listitem"><span>120+</span> experienced consultants </li>
+                      <li class="sol-port-table__listitem"><span>50K+</span> advisory assignment executed</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="sol-port__headline" style="padding: 10px 2px;">Intellectual Property Research     </div>
+                    <ul class="sol-port-table__list">
+                      <li class="sol-port-table__listitem"><span>10K+</span> projects executed, spanning <span>250</span> technology domains</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="sol-port__headline" style="padding: 10px 2px;">Team of Automation Experts </div>
+                    <ul class="sol-port-table__list">
+                      <li class="sol-port-table__listitem">Extensive experience in e-commerce and process automation domains </li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="sol-port__headline" style="padding: 10px 2px;">Marketing and PR Experts </div>
+                    <ul class="sol-port-table__list">
+                      <li class="sol-port-table__listitem">Team of B2B marketers with experience in technology sectors</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-2">
+                    <div class="sol-port__headline" style="padding: 10px 2px;">Administration and other support services</div>
+                    <ul class="sol-port-table__list">
+                      <li class="sol-port-table__listitem">Human Resource, Information Technology, Finance & Accounting experts</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <p class="tab-pane-headline">PROVIDE OPERATIONAL SUPPORT TO START-UPS</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-2">
+                    <ul class="sol-port-table__list">
+                      <li class="sol-port-table__listitem">Provide  insight on target market and competitive intelligence</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-2">
+                    <ul class="sol-port-table__list">
+                      <li class="sol-port-table__listitem">Define patent requirement and provide patent research assistance</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-2">
+                    <ul class="sol-port-table__list">
+                      <li class="sol-port-table__listitem">Conduct technology assessment and highlight necessary improvements</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-2">
+                    <ul class="sol-port-table__list">
+                      <li class="sol-port-table__listitem">Support in PR activity and help in create a brand for the company</li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-2">
+                    <ul class="sol-port-table__list">
+                      <li class="sol-port-table__listitem">Provide on-going operational support and let start-up focus on core business</li>
+                    </ul>
+                  </div>
+                </div>
+              </div> 
+              
+              <div class="tab-pane fade" id="transact">
+                <div class="row">
+                  <div class="col-sm-4 text-center">
+                    <p class="sol-icon"><i class="fa fa-search" aria-hidden="true"></i></p>
+                    <p class="sol-port-b-content__item__headline">Extensive In-House Research Capabilities</p>
+                    <p class="sol-port-b-content__item__para">Team of 600+ experience and qualified  analysts </p>
+                    <p class="sol-port-b-content__item__para">In-house research capabilities across Business, Investment, and IP, supported by the India-focused Transactions Advisory team</p>
+                  </div>
+                  <div class="col-sm-4 text-center">
+                    <p class="sol-icon"><i class="fa fa-users" aria-hidden="true"></i></p>
+                    <p class="sol-port-b-content__item__headline">Management Team</p>
+                    <p class="sol-port-b-content__item__para">Management team with extensive and successful Investment and Entrepreneurial experience </p>
+                    <p class="sol-port-b-content__item__para">Hands-on experience in establishing a company and making it successful</p>
+                  </div>
+                  <div class="col-sm-4 text-center">
+                    <p class="sol-icon"><i class="fa fa-cubes" aria-hidden="true"></i></p>
+                    <p class="sol-port-b-content__item__headline">Developed Partner Ecosystem</p>
+                    <p class="sol-port-b-content__item__para">Developed partner ecosystem for Mentoring, Research, Incubation, IP, Marketing, Transactions, and other related support services </p>
+                    <p class="sol-port-b-content__item__para">Decade-long relationships with   global investors and corporates for successful strategic exits</p>
+                  </div>
+                </div>
+                <br/><br/>
+                <div class="row">
+                  <div class="col-sm-4 text-center">
+                    <p class="sol-icon"><i class="fa fa-usd" aria-hidden="true"></i></p>
+                    <p class="sol-port-b-content__item__headline">Investment Advisory Board</p>
+                    <p class="sol-port-b-content__item__para">Investment advisory board comprising of Industry Veterans and Subject-matter Experts</p>
+                    <p class="sol-port-b-content__item__para">A panel of advisors from various industry domains and with expertise  helping start-ups to grow</p>
+                  </div>
+                  <div class="col-sm-4 text-center">
+                    <p class="sol-icon"><i class="fa fa-cogs" aria-hidden="true"></i></p>
+                    <p class="sol-port-b-content__item__headline">Developed Ecosystem for Deal Flow</p>
+                    <p class="sol-port-b-content__item__para">Well-developed ecosystem for relevant deal flows from Strong Alumni Base (IIT, IIM, LBS) and Industry Network   </p>
+                    <p class="sol-port-b-content__item__para">Collaboration on Government Initiatives to propel entrepreneurship</p>
+                  </div>
+                  <div class="col-sm-4 text-center">
+                    <p class="sol-icon"><i class="fa fa-codepen" aria-hidden="true"></i></p>
+                    <p class="sol-port-b-content__item__headline">Silicon Valley Experience</p>
+                    <p class="sol-port-b-content__item__para">Exhaustive management experience and expertise working with over 1,000+ Silicon Valley Start-ups </p>
+                  </div>
+                </div>                                                                  
+                </div>
+              </div> 
+              
+            </div> 
+          </div>
+
+        </div><!-- row -->
+      </div><!-- container -->
+    </div><!-- row -->
+</section>
+
+
+
