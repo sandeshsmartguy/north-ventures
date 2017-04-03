@@ -61,6 +61,12 @@
 .hs-form .hs-field-desc {
     color: #7d7c7c;
 }
+.form-control {
+  color: #949393;
+}
+.help-inline, .help-block {
+    font-size: 14px;
+}
 </style>
 
 <div id="investee" class="modal fade" role="dialog">
@@ -182,6 +188,7 @@
   <div class="col-md-12">
     <span class="help-block">Is the Company profitable?</span>  
     <select id="profitable" name="profitable" class="form-control">
+      <option value="0">-- Please Select --</option>  
       <option value="Yes">Yes</option>
       <option value="No">No</option>
     </select>
@@ -193,6 +200,7 @@
   <div class="col-md-12">
     <span class="help-block">Have you raised money previously?</span>  
     <select id="raised" name="raised" class="form-control">
+      <option value="0">-- Please Select --</option> 
       <option value="Yes">Yes</option>
       <option value="No">No</option>
     </select>
@@ -212,6 +220,7 @@
   <div class="col-md-12">
     <span class="help-block">Last funding round?</span>  
     <select id="raised" name="raised" class="form-control">
+      <option value="0">-- Please Select --</option> 
       <option value="Seed">Seed</option>
       <option value="Series-A">Series A</option>
       <option value="Series-B">Series B</option>
