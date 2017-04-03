@@ -199,7 +199,7 @@
 <div class="form-group">
   <div class="col-md-12">
     <span class="help-block">Have you raised money previously?</span>  
-    <select id="raised" name="raised" class="form-control">
+    <select id="raised" name="raised" class="form-control" onchange="showDiv(this)">
       <option value="0">-- Please Select --</option> 
       <option value="Yes">Yes</option>
       <option value="No">No</option>
@@ -207,12 +207,8 @@
   </div>
 </div>
 
-<div id="msgbox"></div>
 
-<div id="selectDBType" class="selectDBType" style="display:none;">
-<label for="specify">Specify</label>
-<input type="text" name="specify" placeholder="Specify Databse Type"/>
-</div>
+<div id="hidden_div" style="display:none;">Hello hidden content</div>
 
 <!-- Text input-->
 <div class="form-group">
@@ -245,11 +241,7 @@
   </div>
 </div>
 
-<select id="test" name="form_select" onchange="showDiv(this)">
-   <option value="0">No</option>
-   <option value="1">Yes</option>
-</select>
-<div id="hidden_div" style="display:none;">Hello hidden content</div>
+
 
 <!-- Button -->
 <div class="form-group">
@@ -274,7 +266,7 @@
 
 <script type="text/javascript">
 function showDiv(select){
-   if(select.value==1){
+   if(select.value==Yes){
     document.getElementById('hidden_div').style.display = "block";
    } else{
     document.getElementById('hidden_div').style.display = "none";
