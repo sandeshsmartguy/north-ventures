@@ -207,6 +207,11 @@
   </div>
 </div>
 
+<div id="other" class="selectDBType" style="display:none;">
+<label for="specify">Specify</label>
+<input type="text" name="specify" placeholder="Specify Databse Type"/>
+</div>
+
 <!-- Text input-->
 <div class="form-group">
   <div class="col-md-12">
@@ -258,5 +263,15 @@
 
   </div>
 </div>
+<script type="text/javascript">
 
+ $('#raised').on('change',function(){
+        if( $(this).val()=="Yes"){
+        $("#otherType").show()
+        }
+        else{
+        $("#otherType").hide()
+        }
+    });
 
+ </script>
