@@ -207,7 +207,7 @@
   </div>
 </div>
 
-<div id="other" class="selectDBType" style="display:none;">
+<div id="selectDBType" class="selectDBType" style="display:none;">
 <label for="specify">Specify</label>
 <input type="text" name="specify" placeholder="Specify Databse Type"/>
 </div>
@@ -268,10 +268,10 @@
 
  $('#raised').on('change',function(){
         if( $(this).val()=="Yes"){
-        $(".selectDBType").show()
+        $("#selectDBType").show()
         }
         else{
-        $(".selectDBType").hide()
+        $("#selectDBType").hide()
         }
     });
 
