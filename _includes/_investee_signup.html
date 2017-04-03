@@ -207,6 +207,8 @@
   </div>
 </div>
 
+<div id="msgbox"></div>
+
 <div id="selectDBType" class="selectDBType" style="display:none;">
 <label for="specify">Specify</label>
 <input type="text" name="specify" placeholder="Specify Databse Type"/>
@@ -266,13 +268,15 @@
 
 <script type="text/javascript">
 
- $('#raised').on('change',function(){
-        if( $(this).val()=="Yes"){
-        $("#selectDBType").show()
-        }
-        else{
-        $("#selectDBType").hide()
-        }
-    });
+$('#raised').change(function() {
+    opt = $(this).val();
+    if (opt=="opt1") {
+        $('#msgbox').html('<h2>My House</h2>I have a large house on a quiet street');
+    }else if (opt == "opt2") {
+        $('#msgbox').html('<h2>My Car</h2>I drive an Audi A200');
+    }else if (opt == "opt3") {
+        $('#msgbox').html('<h2>My Bicycle</h2>I do not need a bicycle, I have a car.');
+    }
+});
 
  </script>
