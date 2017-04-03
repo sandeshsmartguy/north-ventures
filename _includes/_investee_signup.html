@@ -103,8 +103,7 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="name"></label>  
-  <div class="col-md-4">
+  <div class="col-md-12">
   <input id="name" name="name" type="text" placeholder="Applicant Name" class="form-control input-md" required="">
     
   </div>
@@ -112,17 +111,15 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="designation"></label>  
-  <div class="col-md-4">
+  <div class="col-md-6">
   <input id="designation" name="designation" type="text" placeholder="Designation" class="form-control input-md" required="">
     
   </div>
 </div>
 
 <!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="company"></label>  
-  <div class="col-md-4">
+<div class="form-group"> 
+  <div class="col-md-6">
   <input id="company" name="company" type="text" placeholder="Company" class="form-control input-md" required="">
     
   </div>
@@ -130,8 +127,7 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="email"></label>  
-  <div class="col-md-4">
+  <div class="col-md-12">
   <input id="email" name="email" type="text" placeholder="Email" class="form-control input-md" required="">
     
   </div>
@@ -139,8 +135,7 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="location"></label>  
-  <div class="col-md-4">
+  <div class="col-md-6">
   <input id="location" name="location" type="text" placeholder="Location" class="form-control input-md" required="">
     
   </div>
@@ -148,8 +143,7 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="website"></label>  
-  <div class="col-md-4">
+  <div class="col-md-6">
   <input id="website" name="website" type="text" placeholder="Website URL" class="form-control input-md" required="">
     
   </div>
@@ -157,44 +151,41 @@
 
 <!-- Textarea -->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="since"></label>
-  <div class="col-md-4">                     
+  <div class="col-md-12">                     
     <textarea class="form-control" id="since" name="since">Company is operating since</textarea>
   </div>
 </div>
 
 <!-- Textarea -->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="selling"></label>
-  <div class="col-md-4">                     
+  <div class="col-md-12">                     
     <textarea class="form-control" id="selling" name="selling">Please discuss product, business model and unique selling point of the Company in brief</textarea>
   </div>
 </div>
 
 <!-- Textarea -->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="milestone"></label>
-  <div class="col-md-4">                     
+  <div class="col-md-12">                     
     <textarea class="form-control" id="milestone" name="milestone">Please provide a short write up highlighting the key operational and financial milestones achieved by the Company</textarea>
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="launch"></label>  
-  <div class="col-md-4">
-  <input id="launch" name="launch" type="text" placeholder="Product Launch Date" class="form-control input-md" required="">
-    
   </div>
 </div>
 
 <!-- Textarea -->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="matrix"></label>
-  <div class="col-md-4">                     
+  <div class="col-md-12">                     
     <textarea class="form-control" id="matrix" name="matrix">Business or product metrics (GMV, no. of users, etc.)</textarea>
   </div>
 </div>
+
+<!-- Text input-->
+<div class="form-group">
+  <div class="col-md-6">
+   <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
+    
+  </div>
+</div>
+
+
 
 </fieldset>
 </form>
@@ -208,3 +199,25 @@
 
   </div>
 </div>
+
+
+<!-- Include jQuery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Include Date Range Picker -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
+<script>
+    $(document).ready(function(){
+        var date_input=$('input[name="date"]'); //our date input has the name "date"
+        var container=$('.form-horizontal').length>0 ? $('.form-horizontal').parent() : "body";
+        date_input.datepicker({
+            format: 'mm/dd/yyyy',
+            container: container,
+            todayHighlight: true,
+            autoclose: true,
+        })
+    })
+</script>
+Here is short video tutorial w
