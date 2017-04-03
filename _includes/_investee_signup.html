@@ -270,12 +270,10 @@
 
 $('#raised').change(function() {
     opt = $(this).val();
-    if (opt=="opt1") {
+    if (opt=="Yes") {
         $('#msgbox').html('<h2>My House</h2>I have a large house on a quiet street');
-    }else if (opt == "opt2") {
+    }else if (opt == "No") {
         $('#msgbox').html('<h2>My Car</h2>I drive an Audi A200');
-    }else if (opt == "opt3") {
-        $('#msgbox').html('<h2>My Bicycle</h2>I do not need a bicycle, I have a car.');
     }
 });
 
