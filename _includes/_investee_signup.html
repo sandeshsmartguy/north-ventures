@@ -113,15 +113,9 @@
 <div class="form-group">
   <div class="col-md-6">
   <input id="designation" name="designation" type="text" placeholder="Designation" class="form-control input-md" required="">
-    
   </div>
-</div>
-
-<!-- Text input-->
-<div class="form-group"> 
   <div class="col-md-6">
   <input id="company" name="company" type="text" placeholder="Company" class="form-control input-md" required="">
-    
   </div>
 </div>
 
@@ -137,15 +131,9 @@
 <div class="form-group">
   <div class="col-md-6">
   <input id="location" name="location" type="text" placeholder="Location" class="form-control input-md" required="">
-    
   </div>
-</div>
-
-<!-- Text input-->
-<div class="form-group">
   <div class="col-md-6">
   <input id="website" name="website" type="text" placeholder="Website URL" class="form-control input-md" required="">
-    
   </div>
 </div>
 
@@ -180,11 +168,34 @@
 <!-- Text input-->
 <div class="form-group">
   <div class="col-md-6">
-   <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
-    
+   <input class="form-control" id="launch" name="launch" placeholder="MM/YYYY" type="text"/>
+  </div>
+  <div class="col-md-6">
+   <input class="form-control" id="revenue" name="revenue" placeholder="MM/YYYY" type="text"/>
   </div>
 </div>
 
+<!-- Select Basic -->
+<div class="form-group">
+  <div class="col-md-4">
+    <span class="help-block">Is the Company profitable?</span>  
+    <select id="profitable" name="profitable" class="form-control">
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+  </div>
+</div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <div class="col-md-4">
+    <span class="help-block">Have you raised money previously?</span>  
+    <select id="raised" name="raised" class="form-control">
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select>
+  </div>
+</div>
 
 
 </fieldset>
@@ -201,23 +212,3 @@
 </div>
 
 
-<!-- Include jQuery -->
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-
-<!-- Include Date Range Picker -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
-
-<script>
-    $(document).ready(function(){
-        var date_input=$('input[name="date"]'); //our date input has the name "date"
-        var container=$('.form-horizontal').length>0 ? $('.form-horizontal').parent() : "body";
-        date_input.datepicker({
-            format: 'mm/dd/yyyy',
-            container: container,
-            todayHighlight: true,
-            autoclose: true,
-        })
-    })
-</script>
-Here is short video tutorial w
