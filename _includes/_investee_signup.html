@@ -201,8 +201,8 @@
     <span class="help-block">Have you raised money previously?</span>  
     <select id="raised" name="raised" class="form-control" onchange="showDiv(this)">
       <option value="0">-- Please Select --</option> 
-      <option value="Yes">Yes</option>
-      <option value="No">No</option>
+      <option value="1">Yes</option>
+      <option value="2">No</option>
     </select>
   </div>
 </div>
@@ -266,7 +266,7 @@
 
 <script type="text/javascript">
 function showDiv(select){
-   if(select.value==Yes){
+   if(select.value==1){
     document.getElementById('hidden_div').style.display = "block";
    } else{
     document.getElementById('hidden_div').style.display = "none";
