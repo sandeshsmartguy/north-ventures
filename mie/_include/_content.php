@@ -1,10 +1,7 @@
 
 
-<!-- Page Content -->
-<div class="container">
 
-    <!-- Marketing Icons Section -->
-    <div class="row">
+
 
 
         <?php
@@ -17,10 +14,8 @@
 
         ?>
 
-    </div>
+
 
     <?php // print_r($_SERVER['REQUEST_URI']); ?>
     <!-- /.row -->
 
-</div>
-<!-- / page container  -->
