@@ -1,0 +1,289 @@
+{% includeJsFile "/js/zozo.tabs.min.js"  %}
+{% includeCssFile "/css/zozo.tabs.min.css"  %}
+
+<style type="text/css">
+  .asx-tabs {
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+  .stats-blok {
+    background-color: #ffffff;
+  }
+
+  .stats-blok__headline--main {
+    margin-bottom: 20px;
+  }
+  .stats-blok__headline {
+    font-size: 30px;
+    color: #59656B;
+    font-weight: 600;
+    text-align: center;
+  }
+  .stats-blok__subtext {
+    font-size: 18px;
+    text-align: center;
+    color: {{ ttgrey }};
+    font-weight: 500;
+  }
+  .stats-blok__border {
+    width: 15%;
+    border: 2px solid #034883;
+  }
+  .stats-blok__headline--col {
+    text-align: center;
+  }
+  .stats-blok__stat {
+    font-size: 24px;
+    color: {{ttOrange}};
+  }
+
+  .stats-blok__stat__content {
+    font-size: 18px;
+    color: {{ttgrey}};
+  }
+
+  .asx-tabs__subheadline {
+    font-size: 18px;
+    color: #A41038;
+    margin-bottom: 15px;
+    font-weight: 300;
+  }
+  .asx-tabs__headline {
+    font-size: 2em;
+    text-align: center;
+    display: none;
+  }
+  
+  .asx-tabs__list {
+    margin-bottom: 20px;
+    list-style: none;
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  .asx-tabs__para {
+    color: #666666;
+    font-size: 16.5px;
+    line-height: 25px;
+  }
+  .asx-tabs__subheadline__item {
+    color: #646564;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #DDDDDD;
+    padding-bottom: 5px;
+  }
+/*
+  .asx-tabs__subheadline__item::before {
+      content: "";
+      border-color: transparent #111;
+      border-style: solid;
+      border-width: 0.35em 0 0.35em 0.45em;
+      display: block;
+      height: 0;
+      width: 0;
+      left: -1em;
+      top: 0.9em;
+      position: relative;
+   }*/
+
+  .asx-tabs__tablist__item {
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+  }
+
+
+  #asx-tabs {
+    padding-top: 30px;
+  }
+
+  .z-tabs.underlined.horizontal>ul>li.z-active>a {
+    font-size: 16px;
+    font-weight: 300;
+    color: #A41038;
+    opacity: 1;
+  }
+  .z-tabs.underlined.horizontal>ul>li.z-active>em {
+    color: #00458b;
+  }
+  .fa {
+    color: #cccccc;
+  }
+  .z-tabs.underlined.horizontal.medium>ul.z-tabs-nav>li>a.z-link {
+    padding: 10px;
+    font-weight: 500;
+  }
+  .asx-tabs_cs a {
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  .asx-tabs_cs_head {
+    color: #b73055; 
+    margin-bottom: 5px; 
+    font-weight: bold;
+  }
+  .asx-tabs_cs_title {
+    color: #0b488d;
+  }
+  .img-cs {
+    width: 70%;
+    text-align: center;
+    margin-left: 50px;
+  }
+  @media only screen and (max-width : 480px) {
+    #asx-tabs {
+      padding-left: 15px;
+      padding-right: 10px;
+    }
+  }
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function () {
+
+      $("#asx-tabs").zozoTabs({
+          theme: "red",
+          style: "underlined",
+          orientation: "horizontal",
+          position: "top-center",
+          size: "medium",
+          animation: {
+            easing: "easeInOutExpo",
+            duration: 400,
+            effects: "slideH"
+          },
+      });
+  });
+
+</script>
+
+<section class="container-fluid asx-tabs">
+<div class="row">
+  <div class="col-sm-12 box-grid__headline-main">
+    <h2 class="lede__headline">Comprehensive Fund Marketing and Investor Communication Support Services</h2>
+    <hr class="lede__border">
+  </div>
+  
+</div>
+<div class="row">
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-sm-12">
+        
+        <div id="asx-tabs">
+          
+          <ul class="asx-tabs__tablist">
+            <li class="asx-tabs__tablist__item"><em class="fa fa-newspaper-o fa-2x" aria-hidden="true"></em><br><a>Digital Marketing</a></li>
+            <li class="asx-tabs__tablist__item"><em class="fa fa-life-ring fa-2x" aria-hidden="true"></em><br><a>Presales</a></li>
+            <li class="asx-tabs__tablist__item"><em class="fa fa-area-chart fa-2x" aria-hidden="true"></em><br><a>Reporting</a></li>
+            <li class="asx-tabs__tablist__item"><em class="fa fa-server fa-2x" aria-hidden="true"></em><br><a>Data Management</a></li>
+          </ul>
+          
+          <div>
+            
+            <div>
+              <h4 class="asx-tabs__headline">Digital Marketing</h4>
+              <br>
+              <div class="row">
+                <div class="col-sm-8">
+                  <p class="asx-tabs__para">The need of the era is digital marketing;&nbsp;the consumption of digital content in investment industry has quadrupled in last five years. Digital marketing is a new market-place to showcase the products and performance for investment managers nowadays. Lagging behind in this market-place would make them invisible to investors. Aranca’s digital marketing support gives you competitive edge in digital space,&nbsp;with intuitive content, rich graphics, data visualization, visitors'&nbsp;analytics and more,&nbsp;across the following aspects:&nbsp;</p>
+                  <ul class="asx-tabs__list">
+                    <li class="asx-tabs__subheadline__item"><em class="fa fa-check-circle" aria-hidden="true"></em> &nbsp;&nbsp;Web content management</li>
+                    <li class="asx-tabs__subheadline__item"><em class="fa fa-check-circle" aria-hidden="true"></em> &nbsp;&nbsp;Web and campaign analytics</li>
+                    <li class="asx-tabs__subheadline__item"><em class="fa fa-check-circle" aria-hidden="true"></em> &nbsp;&nbsp;Distribution of content and reports over multiple mediums</li>
+                    <li class="asx-tabs__subheadline__item"><em class="fa fa-check-circle" aria-hidden="true"></em> &nbsp;&nbsp;Support for Marketing Materials</li>
+                  </ul>
+                </div>                
+                <div class="col-sm-4 asx-tabs_cs"><a href="#" data-toggle="modal" data-target="#myCS1">
+                  <p class="asx-tabs_cs_head">Download Case Study</p>
+                  <p class="asx-tabs_cs_title">Generation of Quality Marketing Material through Better Performance Analysis</p>
+                  <img class="img-cs" src="/assets/images/fms/4-350x350-casestudy.jpg"></a>
+                </div>
+              </div>
+              
+            </div>
+            
+            <div>
+              <h4 class="asx-tabs__headline">Presales</h4>
+              <br>
+              <div class="row">
+                <div class="col-sm-8">
+                  
+                  <p class="asx-tabs__para">Presales is the most important function in any investment management firm which focuses on top-line, the AUM. Competition in the investment industry is fierce;&nbsp;hence converting proposals into deals have become more challenging than ever. Institutional investors have started demanding lot more details about investment management, personnel, techniques, historical performance, etc. Aranca strengthens your presales function by putting together the following knowledge-base.</p>
+                  <ul class="asx-tabs__list">
+                    <li class="asx-tabs__subheadline__item"><em class="fa fa-check-circle" aria-hidden="true"></em> &nbsp;&nbsp;RFP/RFI/DDQs</li>
+                    <li class="asx-tabs__subheadline__item"><em class="fa fa-check-circle" aria-hidden="true"></em> &nbsp;&nbsp;Marketing Material</li>
+                    <li class="asx-tabs__subheadline__item"><em class="fa fa-check-circle" aria-hidden="true"></em> &nbsp;&nbsp;Peer Analysis</li>
+                    <li class="asx-tabs__subheadline__item"><em class="fa fa-check-circle" aria-hidden="true"></em> &nbsp;&nbsp;Consultant database updates</li>
+                    <li class="asx-tabs__subheadline__item"><em class="fa fa-check-circle" aria-hidden="true"></em> &nbsp;&nbsp;Market Research</li>
+                  </ul>
+                </div>                
+                <div class="col-sm-4 asx-tabs_cs"><a href="#" data-toggle="modal" data-target="#myCS2">
+                  <p class="asx-tabs_cs_head">Download Case Study</p>
+                  <p class="asx-tabs_cs_title">AUM Growth through RFP Support</p>
+                  <img class="img-cs" src="/assets/images/fms/1-350x350-casestudy.jpg"></a>
+                </div>
+              </div>
+              
+            </div>
+            <div>
+              <h4 class="asx-tabs__headline">Reporting</h4>
+              <br>
+              <div class="row">
+                <div class="col-sm-8">
+                  
+                  <p class="asx-tabs__para">Performance reporting not only demands effective content with a&nbsp;lot of number crunching, but also requires quick turnaround for investors to get up-to-date snapshot of their investments. Reporting teams are generally challenged by reconciliation of the data with various sources, ever demanding performance analytics by investors and regulators, sourcing organization level information, data visualization, tables and charts formatting, and translation. Investing time and money for reporting, whether on internal teams or off-the-shelf products, has&nbsp;not helped the investment managers. That’s why Aranca arms the performance reporting teams with various facets of information, including the following, to help update the investors with the faster and more reliable snapshot of their investments.</p>
+                  <ul class="asx-tabs__list">
+                    <li class="asx-tabs__subheadline__item"><em class="fa fa-check-circle" aria-hidden="true"></em> &nbsp;&nbsp;Factsheets</li>
+                    <li class="asx-tabs__subheadline__item"><em class="fa fa-check-circle" aria-hidden="true"></em> &nbsp;&nbsp;Client reporting</li>
+                    <li class="asx-tabs__subheadline__item"><em class="fa fa-check-circle" aria-hidden="true"></em> &nbsp;&nbsp;Regulatory reporting</li>
+                    <li class="asx-tabs__subheadline__item"><em class="fa fa-check-circle" aria-hidden="true"></em> &nbsp;&nbsp;NAV Reconciliation</li>
+                    <li class="asx-tabs__subheadline__item"><em class="fa fa-check-circle" aria-hidden="true"></em> &nbsp;&nbsp;AUM Reporting</li>
+                    <li class="asx-tabs__subheadline__item"><em class="fa fa-check-circle" aria-hidden="true"></em> &nbsp;&nbsp;Investment Commentary</li>
+                  </ul>
+                </div>                
+                <div class="col-sm-4 asx-tabs_cs"><a href="#" data-toggle="modal" data-target="#myCS3">
+                  <p class="asx-tabs_cs_head">Download Case Study</p>
+                  <p class="asx-tabs_cs_title">Automation of Performance Attribution Reports</p>
+                  <img class="img-cs" src="/assets/images/fms/3-350x350-casestudy.jpg"></a>
+                </div>
+              </div>
+              
+            </div>
+            <div>
+              <h4 class="asx-tabs__headline">Data Management</h4>
+              <br>
+              <div class="row">
+                <div class="col-sm-8">
+                  <p class="asx-tabs__para">It all starts here, investment management industry&nbsp;heavily relies on data. With the volume, velocity and variety it usually slips through the cracks and leads to massive data management operations like, reconciliations, price-checks and&nbsp;validations. The data management operations are not entirely an IT issue, it requires appropriate domain knowledge to arrange, relate, find gaps&nbsp;and fix them with the correct data. Aranca is a one-stop shop, with the following solutions, to break the data silo amongst departments, bringing clean and usable data on organization level and accessible to all.</p>
+                  <ul class="asx-tabs__list">
+                    <li class="asx-tabs__subheadline__item"><em class="fa fa-check-circle" aria-hidden="true"></em> &nbsp;&nbsp;Collation and Validation of Data from Custodians and Data Vendors, among others</li>
+                    <li class="asx-tabs__subheadline__item"><em class="fa fa-check-circle" aria-hidden="true"></em> &nbsp;&nbsp;Database Creation and Management</li>
+                    <li class="asx-tabs__subheadline__item"><em class="fa fa-check-circle" aria-hidden="true"></em> &nbsp;&nbsp;Integration of Various Internal and External Databases and Sources</li>
+                  </ul>
+                </div>                
+                <div class="col-sm-4 asx-tabs_cs"><a href="#" data-toggle="modal" data-target="#myCS4">
+                  <p class="asx-tabs_cs_head">Download Case Study</p>
+                  <p class="asx-tabs_cs_title">Automation of Fund Factsheet Production</p>
+                  <img class="img-cs" src="/assets/images/fms/2-350x350-casestudy.jpg">
+                  </a>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+      
+    </div>
+    
+    
+  </div>
+  
+</div>
+</section>
+
