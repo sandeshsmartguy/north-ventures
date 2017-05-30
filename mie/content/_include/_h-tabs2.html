@@ -1,230 +1,38 @@
 <style type="text/css">
-  /***
-Bootstrap Line Tabs by @keenthemes
-A component of Metronic Theme - #1 Selling Bootstrap 3 Admin Theme in Themeforest: http://j.mp/metronictheme
-Licensed under MIT
-***/
+.nav-tabs { border-bottom: 2px solid #DDD; }
+    .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { border-width: 0; }
+    .nav-tabs > li > a { border: none; color: #666; }
+        .nav-tabs > li.active > a, .nav-tabs > li > a:hover { border: none; color: #4285F4 !important; background: transparent; }
+        .nav-tabs > li > a::after { content: ""; background: #4285F4; height: 2px; position: absolute; width: 100%; left: 0px; bottom: -1px; transition: all 250ms ease 0s; transform: scale(0); }
+    .nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after { transform: scale(1); }
+.tab-nav > li > a::after { background: #21527d none repeat scroll 0% 0%; color: #fff; }
+.tab-pane { padding: 15px 0; }
+.tab-content{padding:20px}
 
-/* Tabs panel */
-.tabbable-panel {
-  border:1px solid #eee;
-  padding: 10px;
-}
-
-/* Default mode */
-.tabbable-line > .nav-tabs2 {
-  border: none;
-  margin: 0px;
-}
-.tabbable-line > .nav-tabs2 > li {
-  margin-right: 2px;
-}
-.tabbable-line > .nav-tabs2 > li > a {
-  border: 0;
-  margin-right: 0;
-  color: #737373;
-}
-.tabbable-line > .nav-tabs2 > li > a > i {
-  color: #a6a6a6;
-}
-.tabbable-line > .nav-tabs2 > li.open, .tabbable-line > .nav-tabs2 > li:hover {
-  border-bottom: 4px solid #fbcdcf;
-}
-.tabbable-line > .nav-tabs2 > li.open > a, .tabbable-line > .nav-tabs2 > li:hover > a {
-  border: 0;
-  background: none !important;
-  color: #333333;
-}
-.tabbable-line > .nav-tabs2 > li.open > a > i, .tabbable-line > .nav-tabs2 > li:hover > a > i {
-  color: #a6a6a6;
-}
-.tabbable-line > .nav-tabs2 > li.open .dropdown-menu, .tabbable-line > .nav-tabs2 > li:hover .dropdown-menu {
-  margin-top: 0px;
-}
-.tabbable-line > .nav-tabs2 > li.active {
-  border-bottom: 4px solid #f3565d;
-  position: relative;
-}
-.tabbable-line > .nav-tabs2 > li.active > a {
-  border: 0;
-  color: #333333;
-}
-.tabbable-line > .nav-tabs2 > li.active > a > i {
-  color: #404040;
-}
-.tabbable-line > .tab-content {
-  margin-top: -3px;
-  background-color: #fff;
-  border: 0;
-  border-top: 1px solid #eee;
-  padding: 15px 0;
-}
-.portlet .tabbable-line > .tab-content {
-  padding-bottom: 0;
-}
-
-/* Below tabs mode */
-
-.tabbable-line.tabs-below > .nav-tabs2 > li {
-  border-top: 4px solid transparent;
-}
-.tabbable-line.tabs-below > .nav-tabs2 > li > a {
-  margin-top: 0;
-}
-.tabbable-line.tabs-below > .nav-tabs2 > li:hover {
-  border-bottom: 0;
-  border-top: 4px solid #fbcdcf;
-}
-.tabbable-line.tabs-below > .nav-tabs2 > li.active {
-  margin-bottom: -2px;
-  border-bottom: 0;
-  border-top: 4px solid #f3565d;
-}
-.tabbable-line.tabs-below > .tab-content {
-  margin-top: -10px;
-  border-top: 0;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 15px;
-}
+.card {background: #FFF none repeat scroll 0% 0%; box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3); margin-bottom: 30px; }
 </style>
 
 <section class="container-fluid">
-      <!--
-Bootstrap Line Tabs by @keenthemes
-A component of Metronic Theme - #1 Selling Bootstrap 3 Admin Theme in Themeforest: http://j.mp/metronictheme
-Licensed under MIT
--->
-
 <div class="container">
-    <div class="row">
-    <div class="col-md-12">
-      <h3>Default Tab</h3>
+  <div class="row">
+                                    <div class="col-md-6">
+                                    <!-- Nav tabs --><div class="card">
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+                                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+                                        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+                                        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+                                    </ul>
 
-      <div class="tabbable-panel">
-        <div class="tabbable-line">
-          <ul class="nav nav-tabs2 ">
-            <li class="active">
-              <a href="#tab_default_1" data-toggle="tab">
-              Tab 1 </a>
-            </li>
-            <li>
-              <a href="#tab_default_2" data-toggle="tab">
-              Tab 2 </a>
-            </li>
-            <li>
-              <a href="#tab_default_3" data-toggle="tab">
-              Tab 3 </a>
-            </li>
-          </ul>
-          <div class="tab-content">
-            <div class="tab-pane active" id="tab_default_1">
-              <p>
-                I'm in Tab 1.
-              </p>
-              <p>
-                Duis autem eum iriure dolor in hendrerit in vulputate velit esse molestie consequat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.
-              </p>
-              <p>
-                <a class="btn btn-success" href="http://j.mp/metronictheme" target="_blank">
-                  Learn more...
-                </a>
-              </p>
-            </div>
-            <div class="tab-pane" id="tab_default_2">
-              <p>
-                Howdy, I'm in Tab 2.
-              </p>
-              <p>
-                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat. Ut wisi enim ad minim veniam, quis nostrud exerci tation.
-              </p>
-              <p>
-                <a class="btn btn-warning" href="http://j.mp/metronictheme" target="_blank">
-                  Click for more features...
-                </a>
-              </p>
-            </div>
-            <div class="tab-pane" id="tab_default_3">
-              <p>
-                Howdy, I'm in Tab 3.
-              </p>
-              <p>
-                Duis autem vel eum iriure dolor in hendrerit in vulputate. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat
-              </p>
-              <p>
-                <a class="btn btn-info" href="http://j.mp/metronictheme" target="_blank">
-                  Learn more...
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <h3>Below Tab</h3>
-      
-      <div class="tabbable-panel">
-        <div class="tabbable-line tabs-below">
-          <div class="tab-content">
-            <div class="tab-pane active" id="tab_below_1">
-              <p>
-                I'm in Tab 1.
-              </p>
-              <p>
-                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.
-              </p>
-              <p>
-                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat dolor in hendrerit in vulputate velit esse molestie consequat.
-              </p>
-              <p>
-                <a class="btn btn-warning" href="http://j.mp/metronictheme" target="_blank">
-                  Learn more...
-                </a>
-              </p>
-            </div>
-            <div class="tab-pane" id="tab_below_2">
-              <p>
-                Howdy, I'm in Tab 2.
-              </p>
-              <p>
-                Duis autem vel eum iriure dolor in hendrerit in vulputate. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.
-              </p>
-              <p>
-                <a class="btn btn-danger" href="http://j.mp/metronictheme" target="_blank">
-                  Learn more...
-                </a>
-              </p>
-            </div>
-            <div class="tab-pane" id="tab_below_3">
-              <p>
-                Howdy, I'm in Tab 3.
-              </p>
-              <p>
-                Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate.
-              </p>
-              <p>
-                <a class="btn btn-info" href="http://j.mp/metronictheme" target="_blank">
-                  Learn more...
-                </a>
-              </p>
-            </div>
-          </div>
-          <ul class="nav nav-tabs">
-            <li class="active">
-              <a href="#tab_below_1" data-toggle="tab">
-              Tab 1 </a>
-            </li>
-            <li class="">
-              <a href="#tab_below_2" data-toggle="tab">
-              Tab 2 </a>
-            </li>
-            <li>
-              <a href="#tab_below_3" data-toggle="tab">
-              Tab 3 </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane active" id="home">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                                        <div role="tabpanel" class="tab-pane" id="profile">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                                        <div role="tabpanel" class="tab-pane" id="messages">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                                        <div role="tabpanel" class="tab-pane" id="settings">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passage..</div>
+                                    </div>
+</div>
+                                </div>
   </div>
 </div>
 </section>
