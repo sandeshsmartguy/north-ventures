@@ -25,12 +25,22 @@
 
     <script type="text/javascript">
 
-$(document).ready(function() {
- // executes when HTML-Document is loaded and DOM is ready
- alert("document is ready");
-});
+        $(document).ready(function () {
 
-</script>
+              $("#asx-tabs").zozoTabs({
+                  theme: "red",
+                  style: "underlined",
+                  orientation: "horizontal",
+                  position: "top-center",
+                  size: "medium",
+                  animation: {
+                    easing: "easeInOutExpo",
+                    duration: 400,
+                    effects: "slideH"
+                  },
+              });
+          });
+    </script>
 
 </body>
 </html>
